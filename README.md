@@ -1,16 +1,41 @@
-# React + Vite
+# Unsplash Image Gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A image gallery built with React, Vite, and Tailwind CSS, with user authentication and multilingual support.
 
-Currently, two official plugins are available:
+## :gear: Start
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/potatokingz/unsplash.git](https://github.com/potatokingz/unsplash.git)
+   cd unsplash
 
-## React Compiler
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2. Install dependencies:
+```bash
+npm install
 
-## Expanding the Oxlint configuration
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+
+3. Configure your environment with Unsplash API key:
+```env
+VITE_UNSPLASH_KEY=unsplash_access_key
+
+```
+
+
+4. Start the development server:
+```bash
+npm run dev
+
+```
+
+
+
+## Structure
+
+* **Frontend:** React, Vite, Tailwind CSS
+* **Backend:** Firebase for user authentication
+* **Environment:** Node.js (Vite - Node.js v20.19+ or v22.12+, and v24 is the current active LTS line).
+* **Components:** Gallery, Login, and Modal interfaces
